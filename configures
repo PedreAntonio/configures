@@ -2,4 +2,14 @@ import java.util.*;
 public class ShiftLetters {
     public static void main(String[] args) {
         System.out.print("enter the text: ");
-        Scanner cti =
+        Scanner cti = 
+new Scanner(System.in);     
+        String a = cti.nextLine();
+        System.out.print("Enter number of positions: ");
+        int b = cti.nextInt();
+
+        String result = new StringBuilder(a).delete(0, b).append(a.substring(0,b)).toString();
+
+        System.out.println(result);
+    }    
+}
